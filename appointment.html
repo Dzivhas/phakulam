@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Appointment | Phakula M Attorneys</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span>📍 415 City Centre Bldg, Luttig St, Roodepoort</span>
+                <span>📞 081 363 7247</span>
+            </div>
+            <div class="top-badge">🔒 POPIA Secure Consultation Form</div>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-crest">P</div>
+                <div class="logo-text">
+                    <span class="brand-title">PHAKULA M</span>
+                    <span class="brand-subtitle">ATTORNEYS</span>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="practice-areas.html" class="nav-link">Practice Areas</a>
+                <a href="compliance.html" class="nav-link">Legal Compliance</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="appointment.html" class="btn btn-gold nav-btn active">Request Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container text-center">
+            <h1>Request a Legal Consultation</h1>
+            <p>Schedule a formal discussion with an admitted legal practitioner.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3-1">
+                <div class="card form-card">
+                    <h2>Consultation Booking Form</h2>
+                    <p class="form-desc">Please complete the form below. Your submitted information is strictly confidential and protected under POPIA.</p>
+                    
+                    <form id="appointmentForm" class="appointment-form" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Full Name & Surname *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g., Thabo Mokoena" required>
+                        </div>
+
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label for="phone">South African Contact Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="081 234 5678" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="name@example.co.za" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label for="practiceArea">Legal Matter Category *</label>
+                                <select id="practiceArea" name="practiceArea" class="form-control" required>
+                                    <option value="">-- Select Practice Area --</option>
+                                    <option value="Family Law">Family & Divorce Law</option>
+                                    <option value="Civil Litigation">Civil / Commercial Litigation</option>
+                                    <option value="Criminal Defence">Criminal Law / Bail Application</option>
+                                    <option value="Labour Law">Labour Dispute / CCMA</option>
+                                    <option value="Wills & Estates">Wills & Deceased Estate</option>
+                                    <option value="Other">Other Legal Consultation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date *</label>
+                                <input type="date" id="preferredDate" name="preferredDate" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="summary">Brief Summary of Legal Issue *</label>
+                            <textarea id="summary" name="summary" rows="4" class="form-control" placeholder="Provide a brief overview without sharing sensitive third-party confidential details..." required></textarea>
+                        </div>
+
+                        <!-- Statutory POPIA Consent Checkbox -->
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="popiaConsent" name="popiaConsent" required>
+                            <label for="popiaConsent">
+                                I consent to Phakula M Attorneys collecting and processing my personal data in accordance with the Protection of Personal Information Act 4 of 2013 (POPIA) for consultation purposes. *
+                            </label>
+                        </div>
+
+                        <div class="notice-box info-notice">
+                            <small>⚠️ <strong>Important Notice:</strong> Submission of this form does not establish a formal attorney-client mandate. A written fee agreement must be executed following initial assessment.</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-navy btn-block btn-lg">Submit Consultation Request</button>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="card side-card">
+                        <h3>FICA Requirements</h3>
+                        <p>In terms of the Financial Intelligence Centre Act (FICA), please bring the following documents to your consultation:</p>
+                        <ul class="fica-list">
+                            <li>📄 Original South African Green Barcoded ID or Smart Card ID / Passport</li>
+                            <li>🏠 Proof of Residential Address (Utility bill or bank statement less than 3 months old)</li>
+                            <li>💼 Entity Registration Documents (If corporate consultation)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card side-card gold-bg text-dark">
+                        <h3>Direct Office Contact</h3>
+                        <p><strong>Address:</strong><br>415 City Centre Building, Luttig Street, Roodepoort</p>
+                        <p><strong>Cell / WhatsApp:</strong><br>081 363 7247</p>
+                        <p><strong>Hours:</strong><br>Monday – Friday: 08:30 – 16:30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Modal -->
+    <div class="modal-overlay" id="feedbackModal">
+        <div class="modal-content text-center">
+            <div class="modal-icon">✅</div>
+            <h3 id="modalTitle">Consultation Request Received</h3>
+            <p id="modalBody">Thank you. Your request has been securely logged under POPIA standards. Our office will contact you shortly to confirm appointment availability.</p>
+            <button class="btn btn-gold" id="closeModal">Return to Website</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Phakula M Attorneys. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
